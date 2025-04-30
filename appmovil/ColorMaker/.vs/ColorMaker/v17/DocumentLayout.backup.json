@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\appmovil\\ColorMaker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69DD3700-C290-4BF7-8716-F3C0D0ECA086}|ColorMaker.csproj|c:\\users\\usuario\\desktop\\appmovil\\colormaker\\colormaker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{69DD3700-C290-4BF7-8716-F3C0D0ECA086}|ColorMaker.csproj|solutionrelative:colormaker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{35a13b2b-183b-3ec5-a509-0bd77da1a60c}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColorMaker",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\appmovil\\ColorMaker\\ColorMaker.csproj",
+              "RelativeDocumentMoniker": "ColorMaker.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\appmovil\\ColorMaker\\ColorMaker.csproj",
+              "RelativeToolTip": "ColorMaker.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T20:10:36.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
