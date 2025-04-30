@@ -17,21 +17,21 @@
                         HorizontalTextAlignment="Center"
                         Text="Color Maker"/>
                 <Label Text="Red Value:" />
-                <Slider x:Name="sldRed"
+                <Slider x:Name="sliderR"
                     ThumbColor="{StaticResource Primary}"
                     MaximumTrackColor="{StaticResource Tertiary}"
                     MinimumTrackColor="{StaticResource Secondary}"
                     ValueChanged="Slider_ValueChanged"/>
                 <Label Text="Green Value:" />
                 <Slider 
-                    x:Name="sldGreen"
+                    x:Name="sliderG"
                     ThumbColor="{StaticResource Primary}"
                     MaximumTrackColor="{StaticResource Tertiary}"
                     MinimumTrackColor="{StaticResource Secondary}"
                     ValueChanged="Slider_ValueChanged"/>
                 <Label Text="Blue Value:" />
                 <Slider 
-                    x:Name="sldBlue"
+                    x:Name="sliderB"
                     MaximumTrackColor="{StaticResource Tertiary}"
                     MinimumTrackColor="{StaticResource Secondary}"
                     ThumbColor="{StaticResource Primary}"
@@ -50,10 +50,10 @@
                                      Clicked="ImageButton_Clicked"/>
                     </HorizontalStackLayout>
                 </Frame>
-                <Button x:Name="btnRandom"
+                <Button x:Name="RantomButton"
                         BackgroundColor="{StaticResource Primary}"
                         Text="Generate Random Color"
-                        Clicked="btnRandom_Clicked"/>
+                        Clicked="RantomButton_Clicked"/>
             </VerticalStackLayout>
         </Frame>
     </Grid>

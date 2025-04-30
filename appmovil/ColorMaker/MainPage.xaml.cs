@@ -5,8 +5,8 @@ namespace ColorMaker
 {
     public partial class MainPage : ContentPage
     {
-        bool isRandom;
-        string hexValue ="";
+        bool RandomValue;
+        string valorHex ="";
         public MainPage()
         {
             InitializeComponent();
@@ -14,11 +14,11 @@ namespace ColorMaker
 
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if (!isRandom)
+            if (!RandomValue)
             {
-                var red = sldRed.Value;
-                var green = sldGreen.Value;
-                var blue = sldBlue.Value;
+                var red = sliderR.Value;
+                var green = sliderG.Value;
+                var blue = sliderB.Value;
 
                 Color color = Color.FromRgb(red, green, blue);
 
@@ -28,17 +28,17 @@ namespace ColorMaker
         }
         private void SetColor(Color color)
         {
-            btnRandom.BackgroundColor = color;
+            RantomButton.BackgroundColor = color;
             Container.BackgroundColor = color;
-            hexValue = color.ToHex();
-            lblHex.Text = hexValue;
+            valorHex = color.ToHex();
+            lblHex.Text = valorHex;
 
 
         }
 
-        private void btnRandom_Clicked(object sender, EventArgs e)
+        private void RantomButton_Clicked(object sender, EventArgs e)
         {
-            isRandom = true;
+            RandomValue = true;
             var random = new Random();
 
             var color = Color.FromRgb(
@@ -48,16 +48,16 @@ namespace ColorMaker
                 );
             SetColor(color);
 
-            sldRed.Value = color.Red;
-            sldGreen.Value = color.Green;
-            sldBlue.Value = color.Blue;
+            sliderR.Value = color.Red;
+            sliderG.Value = color.Green;
+            sliderB.Value = color.Blue;
 
-            isRandom=false;
+            RandomValue=false;
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Clipboard.SetTextAsync(hexValue);
+            await Clipboard.SetTextAsync(valorHex);
             var toast = Toast.Make("Color copied",
                 CommunityToolkit.Maui.Core.ToastDuration.Short,
                 12);
